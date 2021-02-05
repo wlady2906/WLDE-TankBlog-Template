@@ -1,0 +1,610 @@
+*{
+    box-sizing: border-box;/*Ancho y alto del contenedor en el que se encuentra el elemento.*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.search-facility{
+    margin: 2em 1em 2em 1em;
+    
+}
+
+form.search-bar input[type="text"]{
+    padding: 20px;
+    font-size: 17px;
+    border: 1px solid #7FB3D5;
+    outline: none; /*Quitar contorno al input durante el foco*/
+    float: left;
+    width: 85%;
+    background: #f1f1f1;
+    border-radius: 1rem 0 0 1rem;
+    
+}
+form.search-bar button{
+    float: left;
+    width: 15%;
+    border: 1px solid #E67E22;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none; /*Quitar controno al botón durante el foco*/
+    border-left: none;
+    padding: 20px;
+    color: #FDFEFE;
+    background-color: #E67E22;
+    border-radius: 0 1rem 1rem 0;
+}
+form.search-bar::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a{text-decoration: none; color: #EAECEE;}
+
+.bgimage{
+    background-image: url('../img/ap_british\ tank.jpg');
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    color:  #F7F9F9;
+    float: left;
+    width: 22%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo h4{
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.logo h4:hover{
+    color: #E67E22;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    float: right;
+    background-color:rgba(0, 0, 0, 0.395);
+    position: fixed;
+    z-index: 100;
+    
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 5px auto;
+}
+.navbar ul li{
+    float: left;
+}
+.navbar ul li span{
+    margin: 0 10px 0 0;
+}
+.navbar ul li a{
+    display: inline-block;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F7F9F9;
+    text-align:left;
+}
+.navbar ul li a:hover{
+    color: #E67E22;
+    cursor: pointer;
+}
+.menu{
+    margin: 0 auto;
+    display:none;
+}
+.menu a{
+    text-decoration: none;
+    color: #EAECEE;
+}
+.menu span{
+    font-size: 23px;
+    margin:0 10px 0 0;
+    color: #E67E22;
+}
+
+#highlight{
+    color:#E67E22;
+}
+
+.descriptive-text{
+    width: 100%;
+    margin: 185px auto 185px auto;  
+    padding: 1.5rem 0 1.8rem 0;
+    text-align: center;
+    color: #F7F9F9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.395);
+    
+}
+.descriptive-text h1{
+    font-size: 65px;
+    margin: 14px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    
+}
+.descriptive-text h4{
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+.descriptive-text h3{
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem 0.5rem 0.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.descriptive-text span{
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Sección de contenido: Track and Wheeled vehicles*/
+.section-text{
+    width: 100%;
+    background-color: #FDFEFE;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+.description-section-text{
+    width: 100%;
+    margin: 5rem 0 5rem 0;
+    text-align: center;
+    padding: 3rem 0;
+    line-height: 28px;
+    
+} 
+
+.description-section-text h1{
+    color: #E67E22;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 45px;
+    
+}
+.description-section-text p{
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+    
+}
+
+.container{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    
+}
+.container img{
+    width: 100%;
+    height: auto;
+}
+.container video{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;    
+}
+
+
+/*Card section - about us*/
+.about-us{
+    float: left;
+    width: 24.852%;
+    margin: 18px 0 18px 0;
+    padding: 0 8px;
+}
+.about-card{
+    background-color: #34322e;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    
+}
+.about-card img{
+    border-radius: 15px 15px 15px 15px;
+}
+.about-card:hover{
+    transform: scale(1.01);
+}
+.about-card-body{
+    padding: 1rem 1rem;
+    text-align: justify;
+}
+.about-social{
+    text-align: center;
+}
+#icon:hover{
+    color: #E67E22;
+    transition: 0.3s;
+}
+.tittle{
+    color:#E67E22;
+    font-size: 21px;
+    text-align: center;
+}
+.subtittle{
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+}
+
+/*Bloque de texto sobre una imagen o video*/
+.box-content{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    text-align: justify;
+    background-color: rgba(0,0,0,0.395);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+.box-content a{
+    color: #E67E22;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*Sección para las tarjetas descriptivas de tanques*/
+.card-grid{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-color: #EAECEE;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px); /*Numero de filas que ocupara el contenedor según el tamaños especificado en px, dinamico(se adapta automaticamente al viewport)*/
+    grid-auto-rows: 480px;/*tamaño(Altura) por defecto de las filas de la rejilla, se ajusta al contenido de la rejilla con mayor tamaño*/
+    grid-auto-flow: row;
+    grid-gap: 25px;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+.card{
+    width: 98%;
+    height: 98%;
+    margin: 25px auto 25px auto;
+    background-color:#FDFEFE;
+    border-radius: 15px 15px 0 0;
+}
+
+/*Transición y efecto de sublimado al pasar el cursor sobre la tarejta (Hover)*/
+.card:hover{
+    transition: 0.3s ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.395); /*Generar fecto de sombra*/
+    border-bottom: 5px solid #E67E22;
+    
+}
+.card-body{
+    padding: 12px;
+    
+}
+.card-body h4{
+    font-size: 1em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.card-body h5{
+    font-size: 0.8em;
+    font-weight: 100;
+    padding: 15px auto 15px auto;
+    margin: auto;
+    text-align: justify;
+    
+}
+.card-body p{
+   font-size: 14px;
+   line-height: 24px;
+   padding: 15px 0;
+   border-top: 2px solid #E67E22;
+   display: block;
+   display: -webkit-box; /*genera el tipo de caja más adecuado para el elemento, evita que el contenido se salga de la misma*/
+   text-align: justify;
+   box-sizing: border-box; /*Ajuste automático para el ancho y el alto de acuerdo a la caja en donde se encuentra el contenido*/
+   text-overflow: ellipsis; /*Puntos supensivos*/
+   -webkit-line-clamp: 3; /*limita el número de lineas en un contenedor*/
+   overflow: hidden;
+   -webkit-box-orient: vertical; /*Orientación del caja webkit y su contenido*/
+   max-height: 90px; /*Altura maxima del elemento, no puede superar dicha altura*/
+}
+.card img{
+   width: 100%;
+   height: 250px;
+   border-radius: 15px 15px 0 0;
+   
+}
+#btn-top{
+    display: none; /*Hidden by default(Oculto por defecto)*/
+    position: fixed; /*sticky position, fixed*/
+    bottom: 20px; /*Place the button at the bottom of the page*/
+    right: 30px;/*Place the button at the right of the page*/
+    z-index: 99; /*It does not overlap, always in the z-axis*/
+    border: none; /*remove borders*/
+    outline: none; /*Remove outline*/
+    background-color: #E67E22; /*set a background color*/
+    color: white; /*Text color*/
+    cursor: pointer; /*Mouse indicator*/
+    padding: 18px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+/*Nueva sección de informacion para más contenido*/
+.information-section{
+    width: 100%;
+    background-color: #FDFEFE;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+.information-section-text{
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 28px;
+}
+.information-section-text h1{
+    color: #E67E22;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+.information-section-text p{
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+}
+
+#footer-container{
+    position: relative;
+    overflow: hidden;
+    background: black;
+    color: #FDFEFE;
+    font-family: 'Roboto', sans-serif;
+}
+.company-logo{
+    float: left;
+    width: 13%;
+    padding: 20px;
+    margin: 32px 60px auto 20px;
+   
+}
+.company-logo img{
+    width: 250px;
+   cursor: pointer;
+   
+}
+.company-description {
+    float: left;
+    width: 23%;
+    padding: 20px;
+    margin: 20px;
+}
+.company-description h2{
+    color: #E67E22;
+    line-height: 25px;
+    font-size: 24px;
+}
+.company-description p{
+    line-height: 1.3rem;
+    font-size: 15px;
+    color:#FBFCFC;
+}
+.follow-us{
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E67E22;
+}
+#icon{
+    font-size: 35px;
+    padding: 0.5rem;
+    color:#FBFCFC;
+    cursor: pointer;
+}
+.company-contact {
+    float: left;
+    width: 15%;
+    padding: 20px;
+    margin: 20px;
+}
+.company-contact h2 {
+    color: #E67E22;
+    line-height: 25px;
+    font-size: 24px;
+}
+.company-subscribe {
+    float: left;
+    width: 10%;
+    padding: 20px;
+    margin: 20px;
+}
+.company-subscribe h2 {
+    color: #E67E22;
+    line-height: 25px;
+    font-size: 24px;
+}
+.company-otherlinks {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+}
+.company-otherlinks h2 {
+    color: #E67E22;
+    line-height: 25px;
+    font-size: 24px;
+}
+.company-otherlinks a{
+    text-decoration: none;
+    color:#FBFCFC;
+    display: block;
+}
+
+.row{
+    margin: 0 4px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+.counter-section-column{
+    float: left;
+    width: 24.852%;
+    padding: 1px 1px 1px 1px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.counter{
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    height: 350px;
+    position: relative;
+
+}
+.counter.size{
+    font-size: 15px;
+    padding: 1rem;
+    background-color:#34322e;
+    text-align: justify;
+    margin: 12px;
+    opacity: 0.9;
+}
+.counter i{
+    font-size: 50px;
+    color: #E67E22;
+   
+}
+.counter img{   
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    filter: grayscale(95%);
+       
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.counter p{
+    color: #FFF;
+    line-height: 20px;
+    
+}
+.counter a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #E67E22;
+    font-weight: bold;
+}
+.counter h3{
+    color: #E67E22;
+    font-size: 25px;
+    font-weight: bold;
+}
+.counter:hover, .counter img:hover{
+    transition: 0.3s ease ;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.395); /*Generar fecto de sombra*/
+    transform:scale(1.01);
+    cursor: pointer;
+    
+}
+
+/*Sección de estilos para los articulos relacionados del sitio*/
+::-webkit-scrollbar {
+    display: none; /*Ocultar la barra de desplazamiento pero mantener funcionamiento*/
+}
+.justify{
+    text-align: justify;
+}
+.container-article{
+	width: 100%;
+	max-width: 880xp;
+}
+.container-article img{
+    width: 100%;
+    height: auto;
+}
+.article-container{
+    width: 70%;
+    max-width: 850xp;
+    margin:0 auto;
+}
+
+@media screen and (max-width: 65rem){
+    .company-logo{
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+        margin: 45px auto auto auto;
+    }
+
+    .company-otherlinks {
+        width: 42%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .company-subscribe {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .company-contact {
+        width: 40%;
+        padding: 18px;
+        margin: 10px;
+    }
+    .company-description {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+        text-align:justify;
+        border-bottom: 1px solid gray ;
+    }
+    .box-content{display: block; font-size: 14px;}
+    .container video{height: 450px;}
+    .information-section-text h1{font-size: 25px;}
+    .information-section-text p{font-size: 16px;}
+}
+
+@media screen and (max-width: 65rem){
+    .menu{display: block; float: right; padding: 1rem 0;width: 8%;}
+    .logo{width: 80%;}
+    .navbar{background-color:black; position: fixed;}
+    .navbar ul li{display: none;}
+    .navbar ul.mostrar li{
+        display: block; width: 100%;
+    }
+    .counter-section-column{
+        width: 100%;
+    }
+    .leftside{display: none}
+   
+    .descriptive-text{margin:10rem 0;}
+    .descriptive-text h1{font-size: 45px;}
+    .descriptive-text h4{font-size: 20px;}
+    .descriptive-text h3{font-size: 18px;}
+    .descriptive-text span{font-size: 16px;}
+    .about-us{width: 100%;}
+    
+}
+
+
