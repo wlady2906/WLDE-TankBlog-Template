@@ -1,6 +1,5 @@
-# WladyTechSite-
+# WladyTechSite- WLDE TankBlog Template
 
 
-This is a repository where I upload my recent updates. Many of them are stubs, pieces of code that work well for a very specific purpose such as validating ID, front-end scripts, back-end scripts, or straightforward code like a Hello World.
-
-I enjoy this way of life. I enjoy coding in order to challenge myself.
+A web template focused on the description of armored off-road vehicles known as tanks. 
+Information about engineers vehicles and self-propelled artillery is also included.
